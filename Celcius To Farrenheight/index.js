@@ -5,5 +5,5 @@ let faren = 0;
 
 function fub1() {
     faren = celc.value * (9/5) + 32;
-    out1.innerHTML = faren;
+    out1.innerHTML = faren + '°F';
 }
