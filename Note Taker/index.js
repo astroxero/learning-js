@@ -2,14 +2,18 @@ let b = document.getElementById('comuner')
 let i = document.getElementById('noteInput')
 
 function commitTheNote() {
-    let newDiv = document.createElement("div")
+    if (i.value != "") {
+        let newDiv = document.createElement("div")
     let newButton = document.createElement("button")
     newButton.innerText = 'X'
+    newButton.class="padme"
     newDiv.innerHTML = i.value;
     document.body.appendChild(newDiv)
     document.body.appendChild(newButton)
+    i.value = "";
     newButton.onclick = function deleteNewDiv() {
         document.body.removeChild(newDiv)
         document.body.removeChild(newButton)
+    }
     }
 }
