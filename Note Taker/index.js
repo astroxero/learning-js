@@ -11,6 +11,5 @@ function commitTheNote() {
     newButton.onclick = function deleteNewDiv() {
         document.body.removeChild(newDiv)
         document.body.removeChild(newButton)
-        i.value = null
     }
 }
