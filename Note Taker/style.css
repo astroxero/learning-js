@@ -7,5 +7,6 @@ body {
  
 .padme {
     padding: 10px;
-    
+    border-color: aquamarine;
+    color: blue;
 }
