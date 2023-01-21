@@ -3,7 +3,7 @@ body {
     background-color: hsl(0, 0%, 98%);
     color: rgb(11, 51, 90);
     font: 110% / normal sans-serif;
-    font-family: Luminari, fantasy
+    font-family: Copperplate, fantasy
   }
  
 .padme {
@@ -11,6 +11,8 @@ body {
     border-color: aquamarine;
     color: blue;
     outline: none;
+    border-radius: 10px;
+    contain: none;
     
     
 }
