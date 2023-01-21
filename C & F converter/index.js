@@ -15,14 +15,14 @@ function convert1() {
     if (ftoc == false) {
         outie = innie.value * (9/5) + 32 ;
         farenval = outie;
-        out1.innerHTML = outie + '°F';
+        out1.innerHTML = outie.toFixed(1) + '°F';
         red = Math.floor(outie / 100 * 255);
         blue = Math.floor((100 - outie)/100 * 255);
         green = Math.floor(((50 - Math.abs (50 - outie)) / 50) * 196);
         farenval = outie;
     } else {
         outie = (innie.value - 32) * (5/9);
-        out1.innerHTML = outie + '°C';
+        out1.innerHTML = outie.toFixed(1) + '°C';
 
         red = Math.floor(innie.value / 100 * 255);
         blue = Math.floor((100 - innie.value)/100 * 255);
@@ -31,8 +31,6 @@ function convert1() {
     }
     
     change1.style.background = `rgb(${red}, ${green}, ${blue})`;
-    innie.value = '';
-
 
     if (farenval < 10) {
         out2.innerHTML = 'Layer! Layer! Layer!'
@@ -57,6 +55,11 @@ function convert1() {
     } else if (farenval >100) {
         out2.innerHTML = "You're in hell! Head to the mountains!"
     }
+    if (innie.value == '') {
+        out1.innerHTML = '';
+        out2.innerHTML = '';
+    }
+    innie.value = '';
 }
 
 function switch1() {

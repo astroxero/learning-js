@@ -1,9 +1,35 @@
 body {
     text-align: center;
+    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Black', sans-serif;
+    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Gotham Thin', sans-serif;
+    font-family: 'Gotham XLight', sans-serif;
+    font-family: 'Gotham Book', sans-serif;
+    font-family: 'Gotham Ultra', sans-serif;
+
 }
 .padme {
     padding: 10px;
-    
+    border-color: aquamarine;
+    background: rgb(239, 255, 238);
+    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Black', sans-serif;
+    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Gotham Thin', sans-serif;
+    font-family: 'Gotham XLight', sans-serif;
+    font-family: 'Gotham Book', sans-serif;
+    font-family: 'Gotham Ultra', sans-serif;
+}
+.justpad {
+    padding: 10px;
+    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Black', sans-serif;
+    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Gotham Thin', sans-serif;
+    font-family: 'Gotham XLight', sans-serif;
+    font-family: 'Gotham Book', sans-serif;
+    font-family: 'Gotham Ultra', sans-serif;
 }
 .changeMe {
     width: 400px;
