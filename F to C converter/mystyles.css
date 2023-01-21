@@ -5,3 +5,10 @@ body {
     padding: 10px;
     
 }
+.changeMe {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    background: red;
+    margin: 20px auto;
+}
