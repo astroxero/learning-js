@@ -3,8 +3,7 @@ let change1 = document.querySelector('div');
 const innie = document.getElementById('tbuser');
 const out1 = document.getElementById('output1');
 const out2 = document.getElementById('output2');
-const cbox = document.querySelector('checkbox')
-let outie = 0;
+let outie;
 let red;
 let blue;
 let green;
@@ -30,7 +29,7 @@ function convert1() {
         farenval = innie.value;
     }
     
-    change1.style.background = `rgb(${red}, ${green}, ${blue})`;
+    
 
     if (farenval < 10) {
         out2.innerHTML = 'Layer! Layer! Layer!'
@@ -60,6 +59,8 @@ function convert1() {
         out2.innerHTML = '';
     }
     innie.value = '';
+
+    change1.style.background = `rgb(${red}, ${green}, ${blue})`;
 }
 
 function switch1() {
