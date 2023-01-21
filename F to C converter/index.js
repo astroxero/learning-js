@@ -6,6 +6,7 @@ const cbox = document.querySelector('checkbox')
 let celc = 0;
 let red;
 let blue;
+let green;
 
 function fub1() {
     celc = (faren.value - 32) * (5/9);
@@ -13,5 +14,6 @@ function fub1() {
 
     red = Math.floor(faren.value / 100 * 255);
     blue = Math.floor((100 - faren.value)/100 * 255);
-    change1.style.background = `rgb(${red}, ${0}, ${blue})`;
+    green = Math.floor(((50 - Math.abs (50 - faren.value)) / 50) * 196);
+    change1.style.background = `rgb(${red}, ${green}, ${blue})`;
 }
