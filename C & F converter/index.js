@@ -66,12 +66,12 @@ function convert1() {
 function switch1() {
     if (ftoc == false) {
         ftoc = true
-        innie.placeholder = 'Enter Fahrenheit'
+        innie.placeholder = 'Enter Fahrenheit Here'
         innie.value = '';
         out1.innerHTML = null
     } else {
         ftoc = false
-        innie.placeholder = 'Enter Celcius'
+        innie.placeholder = 'Enter Celcius Here'
         innie.value = '';
         out1.innerHTML = null
     }
