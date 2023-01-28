@@ -7,12 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="switchMe">Switch</button>
+    <h1>Who killed OJ Simpson?</h1>
+    <button class="correctSwitch" onclick="switchToCorTab()">Joe Biden</button>
+    <button class="incorrectSwitch" onclick="switchToInTab()">Greta Thunberg</button>
 
     <script>
-        var button = document.getElementById("switchMe")
-        button.onclick = function switchTab() {
-            window.location.href = "Other Tab/index.html";
+        const corBut = document.getElementsByClassName("correctSwitch")
+        const inBut = document.getElementsByClassName("incorrectSwitch")
+        
+        function switchToCorTab() {
+            window.location.href = "Correct Tab/index.html"
+        }
+        
+        function switchToInTab() {
+            window.location.href = "Incorrect Tab/index.html"
+            console.log('Hi!')
         }
     </script>
 </body>
