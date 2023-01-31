@@ -1,11 +1,12 @@
-const corry = document.getElementsByClassName('correct')
-const inky = document.getElementsByClassName('incorrect')
+const corB = document.getElementById('corry')
+const inB = document.getElementById('inny')
 
-corry.onclick = function switchCorrect() {
-    console.log('Correctomundo!')
-    window.location.href = 'CorrectTab/index.html'
+inB.onclick = function incorrectSwitch() {
+    console.log('coorectumundo!')
+    window.location.href = "./ITab/index.html"
 }
-inky.onclick = function switchInCorrect() {
-    console.log('Nopesies!')
-    window.location.href = 'InTab/index.html'
+corB.onclick = function correctSwitch() {
+    console.log('coorectumundo!')
+    window.location.href = "./CTab/index.html"
 }
+
