@@ -1,0 +1,18 @@
+body {
+    margin: 1000;
+    background-color: hsl(0, 0%, 98%);
+    color: rgb(11, 51, 90);
+    font: 110% / normal sans-serif;
+    font-family: Copperplate, fantasy
+  }
+ 
+.padme {
+    padding: 10px;
+    border-color: aquamarine;
+    color: blue;
+    outline: none;
+    border-radius: 10px;
+    contain: none;
+    
+    
+}
