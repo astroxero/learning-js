@@ -41,7 +41,5 @@ function checkDraw() {
 }
 
 function reset() {
-  for (let i = 0; i < cells.length; i++) {
-    cells[i].textContent = "";
-  }
+  cells.forEach(cell => cell.textContent = "");
 }
